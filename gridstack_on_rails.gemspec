@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Marcin Szulc']
   spec.email         = ['maszudev@gmail.com']
 
-  spec.summary       = 'Grindstack.js implementation for Rails 6'
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = 'Grindstack.js implementation for Rails'
+  spec.description   = 'Compatible with IE11'
   spec.homepage      = 'https://github.com/maszuDEV'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
@@ -29,5 +29,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rspec'
+  # Dependencies
+  spec.add_dependency 'jquery-ui-rails'
+  spec.add_dependency 'sass-rails'
+
+  # Development dependencies
+  spec.add_development_dependency 'pry'
 end
